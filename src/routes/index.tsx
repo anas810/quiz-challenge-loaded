@@ -2,6 +2,9 @@ import { useMemo, useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
 import { QUESTION_POOL, getRank, type QuizQuestion } from "@/lib/quiz-data";
 import { cardPath, tweetUrl, X_HANDLE } from "@/lib/share";
+import logoAsset from "@/assets/maze-of-gains-logo.png.asset.json";
+
+const logoUrl = logoAsset.url;
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -86,9 +89,11 @@ function Index() {
   return (
     <div className="flex min-h-screen w-full flex-col bg-background font-body text-foreground antialiased selection:bg-volt selection:text-dungeon">
       <header className="flex items-center justify-between border-b-2 border-black px-5 py-5 sm:px-10">
-        <span className="font-display text-lg tracking-tight sm:text-xl">
-          MAZE<span className="text-volt"> OF </span>GAINS
-        </span>
+        <img
+          src={logoUrl}
+          alt="Onchain Heroes — Maze of Gains"
+          className="h-6 w-auto sm:h-7"
+        />
         <span className="hidden font-mono text-[11px] uppercase tracking-[0.2em] text-muted-foreground sm:block">
           onchain heroes · abstract
         </span>
