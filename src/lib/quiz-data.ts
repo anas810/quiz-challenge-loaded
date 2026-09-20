@@ -53,8 +53,8 @@ export const QUESTION_POOL: QuizQuestion[] = [
   },
   {
     question: "Which wallet do you need to play MoG?",
-    options: ["Phantom", "Abstract Global Wallet", "Trust Wallet", "Ledger Live"],
-    correctIndex: 1,
+    options: ["Phantom", "Abstract Global Wallet", "Trust Wallet", "All of the above"],
+    correctIndex: 3,
     difficulty: "easy",
   },
   {
