@@ -250,8 +250,9 @@ function Index() {
                   onClick={startQuiz}
                   className="rounded-xl border-2 border-black bg-volt px-5 py-3 font-display text-sm text-dungeon"
                 >
-                  Run it again
+                  Play again
                 </button>
+
               </div>
             </div>
           </div>
