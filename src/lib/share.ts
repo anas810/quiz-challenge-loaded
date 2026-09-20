@@ -1,5 +1,5 @@
 /** Absolute, immutable project URL — needed so X can fetch the score-card image. */
-export const SITE_URL = "https://project--106b18c7-31d7-44d5-b91c-f8b2ebc222ec.lovable.app";
+export const SITE_URL = "https://project--3c3652c0-16f4-4623-8674-da2e2fe587d0.lovable.app";
 
 export const X_HANDLE = "@onchainheroes";
 
@@ -25,7 +25,7 @@ export function sharePageUrl(score: number): string {
 }
 
 export function tweetUrl(score: number, rankTitle: string): string {
-  const text = `I scored ${clampScore(score)}/${TOTAL_QUESTIONS} on the Maze of Gains quiz — rank: ${rankTitle}.\n\nThink you know the maze better? ${X_HANDLE}`;
+  const text = `I scored ${clampScore(score)}/${TOTAL_QUESTIONS} on the ${X_HANDLE} Maze of Gains quiz — rank: ${rankTitle}.\n\nThink you know the maze better?`;
   return `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(
     sharePageUrl(score),
   )}`;
