@@ -33,9 +33,7 @@ function SharePage() {
 
   return (
     <div className="flex min-h-screen w-full flex-col items-center justify-center gap-8 bg-background px-5 py-14 font-body text-foreground antialiased">
-      <span className="font-display text-lg tracking-tight sm:text-xl">
-        MAZE<span className="text-volt"> OF </span>GAINS
-      </span>
+      <img src={logoUrl} alt="Onchain Heroes — Maze of Gains" className="h-7 w-auto sm:h-8" />
 
       <img
         src={cardPath(score)}
